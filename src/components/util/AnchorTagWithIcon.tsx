@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "../icons/icons";
 interface AnchorTagWithIconProps {
     href: string;
     text: string;
-    icon: React.ComponentType<{ className?: string }>;
+    icon?: React.ComponentType<{ className?: string }>;
     marginTop?:number;
 }
 

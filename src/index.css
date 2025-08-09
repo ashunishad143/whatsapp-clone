@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+
+/* Chrome, Safari, Edge, Opera ke liye */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox ke liye */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -3,9 +3,9 @@ import { Images } from "../../assets/images";
 import { ArrowOut, } from "../icons/icons";
 import StepsToLogin from "./StepToLogin";
 import AnchorTagWithIcon from "../util/AnchorTagWithIcon";
-import LoginWithPhone from "./LoginWithPhone";
+import LoginWithPhone from "./loginwithphone/LoginWithPhone";
 function Login() {
-  const [loginWithQr, setLoginWithQr] = useState<boolean>(false);
+  const [loginWithQr, setLoginWithQr] = useState<boolean>(true);
   console.log(loginWithQr)
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#fef9f3] via-[#fcf4e2] to-[#f8e8c0]">
@@ -33,7 +33,7 @@ function Login() {
       {/* Steps to Login Section start*/}
       <div className="flex flex-col-reverse lg:flex-row justify-between gap-10 bg-white my-10 mx-10 
       sm:mx-20 md:mx-20 lg:mx-60 rounded-4xl py-5 px-10 border-black border-1">
-       {loginWithQr? <StepsToLogin setLoginWithQr={setLoginWithQr} /> : <LoginWithPhone />}
+       {loginWithQr? <StepsToLogin setLoginWithQr={setLoginWithQr} /> : <LoginWithPhone setLoginWithQr={setLoginWithQr} />}
       </div>
       {/* Steps to Login Section end*/}
       
